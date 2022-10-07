@@ -18,6 +18,7 @@ import {
   HighlightBlockEdit,
   DownloadLinkBlockEdit,
   DownloadLinkBlockView,
+  eventListingTemplate,
 } from '~/components';
 import sliderSVG from '@plone/volto/icons/slider.svg';
 // All your imports required for the config here BEFORE this line
@@ -55,6 +56,15 @@ export default function applyConfig(config) {
       view: [],
     },
   };
+
+  config.blocks.blocksConfig.listing.variations = [
+    ...config.blocks.blocksConfig.listing.variations,
+    {
+      id: 'eventListing',
+      title: 'Events',
+      template: eventListingTemplate,
+    },
+  ];
 
   return config;
 }

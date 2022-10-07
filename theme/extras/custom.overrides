@@ -170,3 +170,59 @@
     font-weight: bold;
   }
 }
+
+//event listing
+
+.block.listing.eventListing {
+  background: #e8eef2;
+
+  .text-col {
+    background: #d8e2e9;
+    margin: 15px;
+    padding: 15px;
+
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 21px;
+      font-weight: 300;
+    }
+    a.ui.button {
+      color: @white;
+      font-weight: normal;
+      background-color: #00608b;
+      border: solid 1px #004767;
+      margin-bottom: 10px;
+    }
+  }
+
+  .listing-col {
+    .item {
+      background: @white;
+      padding: 0;
+      margin: 1em;
+      .date {
+        background: #1f1238;
+        color: @white;
+        text-transform: uppercase;
+        text-align: right;
+        padding: 5px 10px;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      .item-body {
+        margin: 10px;
+        h3 {
+          font-size: 24px;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+        .location {
+          color: @grey;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
