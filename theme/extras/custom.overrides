@@ -139,3 +139,34 @@
     }
   }
 }
+
+// Download block
+
+.block.download {
+  background: #e8eef2;
+  .ui.container {
+    padding: 40px 200px;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .description {
+    font-size: 21px;
+  }
+
+  a.ui.button {
+    background: #cc2b00;
+    font-size: 18px;
+    color: @white;
+    border-radius: 6px;
+    padding: 14px 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+  a.other-link {
+    color: #175758;
+    font-weight: bold;
+  }
+}

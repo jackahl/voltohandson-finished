@@ -4,7 +4,7 @@
  */
 
 import React, { Component } from 'react';
-import { Container, Segment, Dropdown, Button } from 'semantic-ui-react';
+import { Container, Segment, Dropdown } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';

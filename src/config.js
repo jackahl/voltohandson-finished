@@ -13,7 +13,12 @@
  * }
  */
 
-import { HighlightBlockView, HighlightBlockEdit } from '~/components';
+import {
+  HighlightBlockView,
+  HighlightBlockEdit,
+  DownloadLinkBlockEdit,
+  DownloadLinkBlockView,
+} from '~/components';
 import sliderSVG from '@plone/volto/icons/slider.svg';
 // All your imports required for the config here BEFORE this line
 import '@plone/volto/config';
@@ -28,6 +33,21 @@ export default function applyConfig(config) {
     group: 'common',
     view: HighlightBlockView,
     edit: HighlightBlockEdit,
+    restricted: false,
+    mostUsed: true,
+    security: {
+      addPermission: [],
+      view: [],
+    },
+  };
+
+  config.blocks.blocksConfig.download = {
+    id: 'download',
+    title: 'Download',
+    icon: sliderSVG,
+    group: 'common',
+    view: DownloadLinkBlockView,
+    edit: DownloadLinkBlockEdit,
     restricted: false,
     mostUsed: true,
     security: {

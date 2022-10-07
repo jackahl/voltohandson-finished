@@ -1,7 +1,8 @@
 import React from 'react';
+import View from './View';
 
 const HighlightEdit = (props) => {
-  return <div>I am the Highlight Edit component</div>;
+  return <View {...props} />;
 };
 
 export default HighlightEdit;
