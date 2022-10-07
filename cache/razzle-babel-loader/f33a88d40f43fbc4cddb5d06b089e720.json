@@ -1,0 +1,1 @@
+{"ast":null,"code":"export * from './Loadable';","map":{"version":3,"names":[],"sources":["/home/jakob/workspace/training-project/node_modules/@plone/volto/src/helpers/Loadable/index.js"],"sourcesContent":["export * from './Loadable';\n"],"mappings":"AAAA,cAAc,YAAd"},"metadata":{"react-intl":{"messages":[]}},"sourceType":"module"}
