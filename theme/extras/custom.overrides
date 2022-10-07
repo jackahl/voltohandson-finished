@@ -108,3 +108,34 @@
     font-weight: bold;
   }
 }
+// general css
+
+.ui.basic.segment.content-area {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+// full width-blocks
+.full-width {
+  max-width: none !important;
+  margin-right: -50vw !important;
+  margin-left: -50vw !important;
+}
+// highlight
+
+.block.highlight {
+  display: flex;
+  width: 100% !important;
+  justify-content: center;
+  background: #113156;
+  padding-top: 68px;
+  padding-bottom: 48px;
+  .inner {
+    text-align: center;
+    color: @white;
+    a.ui.button {
+      background: #1f9092;
+      color: @white;
+    }
+  }
+}

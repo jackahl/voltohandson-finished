@@ -13,10 +13,28 @@
  * }
  */
 
+import { HighlightBlockView, HighlightBlockEdit } from '~/components';
+import sliderSVG from '@plone/volto/icons/slider.svg';
 // All your imports required for the config here BEFORE this line
 import '@plone/volto/config';
 
 export default function applyConfig(config) {
   // Add here your project's configuration here by modifying `config` accordingly
+  config.blocks.requiredBlocks = [];
+  config.blocks.blocksConfig.highlight = {
+    id: 'highlight',
+    title: 'Highlight',
+    icon: sliderSVG,
+    group: 'common',
+    view: HighlightBlockView,
+    edit: HighlightBlockEdit,
+    restricted: false,
+    mostUsed: true,
+    security: {
+      addPermission: [],
+      view: [],
+    },
+  };
+
   return config;
 }

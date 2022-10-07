@@ -8,3 +8,8 @@
  *   Footer,
  * };
  */
+
+import HighlightBlockEdit from './Blocks/highlight/Edit';
+import HighlightBlockView from './Blocks/highlight/View';
+
+export { HighlightBlockEdit, HighlightBlockView };
