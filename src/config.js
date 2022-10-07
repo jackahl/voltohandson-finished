@@ -19,8 +19,9 @@ import {
   DownloadLinkBlockEdit,
   DownloadLinkBlockView,
   eventListingTemplate,
-} from '~/components';
-import sliderSVG from '@plone/volto/icons/slider.svg';
+  sprintView,
+} from '@package/components';
+import heroSVG from '@plone/volto/icons/hero.svg';
 // All your imports required for the config here BEFORE this line
 import '@plone/volto/config';
 
@@ -30,7 +31,7 @@ export default function applyConfig(config) {
   config.blocks.blocksConfig.highlight = {
     id: 'highlight',
     title: 'Highlight',
-    icon: sliderSVG,
+    icon: heroSVG,
     group: 'common',
     view: HighlightBlockView,
     edit: HighlightBlockEdit,
@@ -65,6 +66,8 @@ export default function applyConfig(config) {
       template: eventListingTemplate,
     },
   ];
+
+  config.views.contentTypesViews.sprint = sprintView;
 
   return config;
 }

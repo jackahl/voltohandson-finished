@@ -6,7 +6,7 @@
 import React from 'react';
 import { Container, List, Segment, Grid } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import { Logo } from '@plone/volto/components';
+import { Logo, UniversalLink } from '@plone/volto/components';
 
 /**
  * Component to display the footer.
@@ -30,23 +30,31 @@ const Footer = () => {
             <Grid.Column>
               <List inverted>
                 <List.Header>
-                  <Link to="/about-plone">Plone Foundation</Link>
+                  <UniversalLink href="/about-plone">
+                    Plone Foundation
+                  </UniversalLink>
                 </List.Header>
                 <List.Content>
                   <List.Item>
-                    <Link to="/donate">Donate & Sponsors</Link>
+                    <UniversalLink href="/donate">
+                      Donate & Sponsors
+                    </UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <Link to="/meeting">Meeting minutes</Link>
+                    <UniversalLink href="/meeting">
+                      Meeting minutes
+                    </UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <Link to="/board">Current board</Link>
+                    <UniversalLink href="/board">Current board</UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <Link to="/board">Foundation members</Link>
+                    <UniversalLink href="/board">
+                      Foundation members
+                    </UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <Link to="/coc">Code of Conduct</Link>
+                    <UniversalLink href="/coc">Code of Conduct</UniversalLink>
                   </List.Item>
                 </List.Content>
               </List>
@@ -54,17 +62,23 @@ const Footer = () => {
             <Grid.Column>
               <List inverted>
                 <List.Header>
-                  <Link to="/support">Support</Link>
+                  <UniversalLink href="/support">Support</UniversalLink>
                 </List.Header>
                 <List.Content>
                   <List.Item>
-                    <Link to="/community/chat">Chat room</Link>
+                    <UniversalLink href="/community/chat">
+                      Chat room
+                    </UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <a href="https://community.plone.org/">Forums</a>
+                    <UniversalLink href="https://community.plone.org/">
+                      Forums
+                    </UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <Link to="/locals">Local user groups</Link>
+                    <UniversalLink href="/locals">
+                      Local user groups
+                    </UniversalLink>
                   </List.Item>
                 </List.Content>
               </List>
@@ -72,23 +86,27 @@ const Footer = () => {
             <Grid.Column>
               <List inverted>
                 <List.Header>
-                  <Link to="/downloads">Downloads</Link>
+                  <UniversalLink href="/downloads">Downloads</UniversalLink>
                 </List.Header>
                 <List.Content>
                   <List.Item>
-                    <Link to="/get-plone">Get Plone</Link>
+                    <UniversalLink href="/get-plone">Get Plone</UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <Link to="/addons">All add-ons</Link>
+                    <UniversalLink href="/addons">All add-ons</UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <Link to="/security">Security</Link>
+                    <UniversalLink href="/security">Security</UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <Link to="/hotfixes">Check hotfixes</Link>
+                    <UniversalLink href="/hotfixes">
+                      Check hotfixes
+                    </UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <a href="https://github.com/plone">Browse source</a>
+                    <UniversalLink href="https://github.com/plone">
+                      Browse source
+                    </UniversalLink>
                   </List.Item>
                 </List.Content>
               </List>
@@ -96,54 +114,38 @@ const Footer = () => {
             <Grid.Column>
               <List inverted>
                 <List.Header>
-                  <a href="https://docs.plone.org/">Documentation</a>
+                  <UniversalLink href="https://docs.plone.org/">
+                    Documentation
+                  </UniversalLink>
                 </List.Header>
                 <List.Content>
                   <List.Item>
-                    <a href="https://docs.plone.org/">Full documentation</a>
+                    <UniversalLink href="https://docs.plone.org/">
+                      Full documentation
+                    </UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <a href="https://training.plone.org/">Training</a>
+                    <UniversalLink href="https://training.plone.org/">
+                      Training
+                    </UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <a href="http://docs.plone.org/manage/installing/">
+                    <UniversalLink href="http://docs.plone.org/manage/installing/">
                       Installation
-                    </a>
+                    </UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <a href="https://www.youtube.com/c/PloneCMS">YouTube</a>
+                    <UniversalLink href="https://www.youtube.com/c/PloneCMS">
+                      YouTube
+                    </UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <a href="https://www.linkedin.com/company/plone-foundation/">
+                    <UniversalLink href="https://www.linkedin.com/company/plone-foundation/">
                       Linkedin
-                    </a>
+                    </UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <Link to="/about">About this site</Link>
-                  </List.Item>
-                </List.Content>
-              </List>
-            </Grid.Column>
-            <Grid.Column>
-              <List inverted>
-                <List.Header>
-                  <Link to="/contribute">Contribute</Link>
-                </List.Header>
-                <List.Content>
-                  <List.Item>
-                    <Link to="/roadmap">Roadmap</Link>
-                  </List.Item>
-                  <List.Item>
-                    <Link to="/report-bugs">Report bugs in Plone</Link>
-                  </List.Item>
-                  <List.Item>
-                    <Link to="/security">Report website issues</Link>
-                  </List.Item>
-                  <List.Item>
-                    <Link to="/skills">Contribute skills</Link>
-                  </List.Item>
-                  <List.Item>
-                    <a href="https://github.com/plone">Contribute code</a>
+                    <UniversalLink href="/about">About this site</UniversalLink>
                   </List.Item>
                 </List.Content>
               </List>
@@ -151,27 +153,67 @@ const Footer = () => {
             <Grid.Column>
               <List inverted>
                 <List.Header>
-                  <Link to="/contribute">Stay up to date</Link>
+                  <UniversalLink href="/contribute">Contribute</UniversalLink>
                 </List.Header>
                 <List.Content>
                   <List.Item>
-                    <Link to="/newsletter">Newsletter signup</Link>
+                    <UniversalLink href="/roadmap">Roadmap</UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <a href="http://planet.plone.org/">Planet Plone (blogs)</a>
+                    <UniversalLink href="/report-bugs">
+                      Report bugs in Plone
+                    </UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <a href="https://twitter.com/plone">@plone on Twitter</a>
+                    <UniversalLink href="/security">
+                      Report website issues
+                    </UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <a href="https://www.facebook.com/plonecms/">
+                    <UniversalLink href="/skills">
+                      Contribute skills
+                    </UniversalLink>
+                  </List.Item>
+                  <List.Item>
+                    <UniversalLink href="https://github.com/plone">
+                      Contribute code
+                    </UniversalLink>
+                  </List.Item>
+                </List.Content>
+              </List>
+            </Grid.Column>
+            <Grid.Column>
+              <List inverted>
+                <List.Header>
+                  <UniversalLink href="/contribute">
+                    Stay up to date
+                  </UniversalLink>
+                </List.Header>
+                <List.Content>
+                  <List.Item>
+                    <UniversalLink href="/newsletter">
+                      Newsletter signup
+                    </UniversalLink>
+                  </List.Item>
+                  <List.Item>
+                    <UniversalLink href="http://planet.plone.org/">
+                      Planet Plone (blogs)
+                    </UniversalLink>
+                  </List.Item>
+                  <List.Item>
+                    <UniversalLink href="https://twitter.com/plone">
+                      @plone on Twitter
+                    </UniversalLink>
+                  </List.Item>
+                  <List.Item>
+                    <UniversalLink href="https://www.facebook.com/plonecms/">
                       PloneCMS on Facebook
-                    </a>
+                    </UniversalLink>
                   </List.Item>
                   <List.Item>
-                    <a href="https://www.linkedin.com/groups/2300">
+                    <UniversalLink href="https://www.linkedin.com/groups/2300">
                       Plone LinkedIn group
-                    </a>
+                    </UniversalLink>
                   </List.Item>
                 </List.Content>
               </List>
@@ -198,9 +240,9 @@ const Footer = () => {
                 Foundation, registered in the United States and other countries.
                 For guidelines on the permitted uses of the Plone trademarks,
                 see{' '}
-                <a href="https://plone.org/foundation/logo">
+                <UniversalLink href="https://plone.org/foundation/logo">
                   https://plone.org/foundation/logo
-                </a>
+                </UniversalLink>
               </p>
             </Grid.Column>
             <Grid.Column>

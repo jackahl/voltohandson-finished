@@ -14,6 +14,7 @@ import HighlightBlockView from './Blocks/highlight/View';
 import DownloadLinkBlockEdit from './Blocks/download/Edit';
 import DownloadLinkBlockView from './Blocks/download/View';
 import eventListingTemplate from './Blocks/listing/eventTemplate';
+import sprintView from './Views/SprintView';
 
 export {
   HighlightBlockEdit,
@@ -21,4 +22,5 @@ export {
   DownloadLinkBlockEdit,
   DownloadLinkBlockView,
   eventListingTemplate,
+  sprintView,
 };
