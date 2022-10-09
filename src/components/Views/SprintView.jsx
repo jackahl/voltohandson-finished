@@ -1,12 +1,16 @@
 import React from 'react';
 import { DefaultView } from '@plone/volto/components';
 import { Container } from 'semantic-ui-react';
+import moment from 'moment';
 
 const SprintView = (props) => {
   const { content } = props;
   return (
     <Container>
-      <h2>{content.head_title}</h2>
+      <p>
+        From {moment(content.start).format('MMMM D, YYYY')} to{' '}
+        {moment(content.start).format('MMMM D, YYYY')}
+      </p>
       <DefaultView {...props} />
     </Container>
   );

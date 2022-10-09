@@ -1,11 +1,9 @@
 import React from 'react';
 import { Grid } from 'semantic-ui-react';
 import { UniversalLink } from '@plone/volto/components';
-import { injectLazyLibs } from '@plone/volto/helpers/Loadable/Loadable';
+import moment from 'moment';
 
-const eventTemplate = ({ items, moment: momentlib }) => {
-  const moment = momentlib.default;
-
+const eventTemplate = ({ items }) => {
   return (
     <Grid columns={3}>
       <Grid.Column width={4}>
@@ -21,7 +19,7 @@ const eventTemplate = ({ items, moment: momentlib }) => {
             Add an event
           </UniversalLink>
           <br />
-          <UniversalLink href="/add?type=Sprint" className="ui button">
+          <UniversalLink href="/add?type=sprint" className="ui button">
             Add a sprint
           </UniversalLink>
           <br />
@@ -55,4 +53,4 @@ const eventTemplate = ({ items, moment: momentlib }) => {
   );
 };
 
-export default injectLazyLibs(['moment'])(eventTemplate);
+export default eventTemplate;

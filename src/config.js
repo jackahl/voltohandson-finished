@@ -46,7 +46,7 @@ export default function applyConfig(config) {
   config.blocks.blocksConfig.download = {
     id: 'download',
     title: 'Download',
-    icon: sliderSVG,
+    icon: heroSVG,
     group: 'common',
     view: DownloadLinkBlockView,
     edit: DownloadLinkBlockEdit,
