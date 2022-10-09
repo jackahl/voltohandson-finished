@@ -37,10 +37,7 @@ export default function applyConfig(config) {
     edit: HighlightBlockEdit,
     restricted: false,
     mostUsed: true,
-    security: {
-      addPermission: [],
-      view: [],
-    },
+    sidebarTab: 1,
   };
 
   config.blocks.blocksConfig.download = {
@@ -52,10 +49,7 @@ export default function applyConfig(config) {
     edit: DownloadLinkBlockEdit,
     restricted: false,
     mostUsed: true,
-    security: {
-      addPermission: [],
-      view: [],
-    },
+    sidebarTab: 1,
   };
 
   config.blocks.blocksConfig.listing.variations = [
